@@ -1,5 +1,6 @@
 package colombo.OpenBootCamp_SpringBoot.entities;
 
+import io.swagger.annotations.ApiModelProperty;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -10,6 +11,7 @@ public class Laptop {
 //        atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty("Clave Long autoincremental")
     private Long id;
     private String marca;
     private String modelo;
